@@ -1,0 +1,15 @@
+typegates:
+  dev:
+    url: "http://localhost:7890"
+    username: admin
+    password: password
+    secrets:
+      example:
+        POSTGRES: "postgresql://postgres:password@postgres:5432/db"
+  deploy:
+    url: "https://cloud.metatype.dev"
+    username: admin
+    password: password
+    secrets:
+      example:
+        POSTGRES: "postgresql://postgres:password@localhost:5432/db"

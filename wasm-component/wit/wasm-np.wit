@@ -1,0 +1,11 @@
+package demo:wasm-np;
+
+
+world wasm-np{
+    export multiply: func(a: list<list<f64>>, b: list<list<f64>>) -> result<list<list<f64>>, string>;
+    export add: func(a: list<list<f64>>, b: list<list<f64>>) -> result<list<list<f64>>, string>;
+    export subtract: func(a: list<list<f64>>, b: list<list<f64>>) -> result<list<list<f64>>, string>;
+    export transpose: func(a: list<list<f64>>) -> result<list<list<f64>>, string>;
+    export invert: func(a: list<list<f64>>) -> result<list<list<f64>>, string>;
+    export determinant: func(a: list<list<f64>>) -> result<f64, string>;
+}
