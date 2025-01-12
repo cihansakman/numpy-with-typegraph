@@ -4,3 +4,4 @@ wasm-component/regex/
 wasm-component/wasm_np
 .graphqlrc.yaml
 *.wasm
+*.gz
