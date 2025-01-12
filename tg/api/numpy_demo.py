@@ -75,4 +75,11 @@ def np_functions(g: Graph):
             ]),
             name="determinant", #exported function
                             ),
+        wasm_analyze = wasm.export(
+            t.struct({
+                    "a": t.string(),
+                    }),
+            t.string(),
+            name="analyze", #exported function
+                            ),
     )
