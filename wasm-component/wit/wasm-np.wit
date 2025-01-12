@@ -8,4 +8,5 @@ world wasm-np{
     export transpose: func(a: list<list<f64>>) -> result<list<list<f64>>, string>;
     export invert: func(a: list<list<f64>>) -> result<list<list<f64>>, string>;
     export determinant: func(a: list<list<f64>>) -> result<f64, string>;
+    export analyze: func(a: string) -> result<string, string>;
 }
