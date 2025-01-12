@@ -3,6 +3,7 @@ Load the pre-compiled Wasm component using `WasmRuntime.reflected()` and expose 
 
 Deploy it using following command
 ```
+meta
 meta deploy -f api/numpy_demo.py --allow-dirty --create-migration --target dev --gate http://localhost:7890
 ```
 
@@ -44,6 +45,21 @@ query InvertWasm {
 query DeterminantWasm {
   wasm_determinant(
     a: [[4, 1], [2, 3]]
+  )
+}
+
+query AnalyzeWasm {
+  wasm_analyze(
+    a: 
+    """
+Id,Name,Age,Cost,Category
+1,John,25,100,Food
+2,Jane,30,150,Electronics
+3,Doe,35,200,Food
+6,Cihan,40,99,IT
+7,Teo,33,120,IT
+8,Ciho,24,210,Worker
+    """
   )
 }
 ```

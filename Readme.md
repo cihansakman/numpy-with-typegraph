@@ -8,6 +8,7 @@ Using the GraphQL UI, users can perform basic Numpy operations, including matrix
 - Multiplication  
 - And more  
 
+The example has been extended to include file analysis with the following [repo](https://github.com/cihansakman/numpy-w-wasm). For this project, the Wasm component does not expect a file path, instead, it accepts CSV-like strings and analyzes them similarly using both Numpy and Regex via Metatype's GraphQL UI.
 
 ### Pipeline  
 
